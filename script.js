@@ -1,9 +1,9 @@
 //your JS code here. If required.
 function removeColor(){
-	let col = document.getElementById("colorSelect").value;
-	let arr = document.getElementById("colorSelect").children;
-	for(let opt of arr){
-		if(opt.innerText == col){
+	let selectedColor = document.getElementById("colorSelect").value;
+	let optionsArr = document.getElementById("colorSelect").children;
+	for(let opt of optionsArr){
+		if(opt.innerText == selectedColor){
 			opt.remove();
 		}
 	}
